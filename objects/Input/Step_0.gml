@@ -1,0 +1,20 @@
+KeyCheck();
+tooltip="";
+gui_x=device_mouse_x_to_gui(0);
+gui_y=device_mouse_y_to_gui(0);
+x=mouse_x;
+y=mouse_y;
+cursor_sprite=mc_left1?sprite_clicked:sprite_normal;
+check_button();
+if(mp_right1){
+    Trace("MP_RIGHT");
+    if(!Exists(Shop)){
+        InstanceCreate(Shop);
+    }else{
+        with(Shop){
+            if(state==state_normal){
+                state=state_despawn;
+            }
+        }
+    }
+}
