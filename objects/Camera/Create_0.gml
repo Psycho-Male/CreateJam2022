@@ -49,8 +49,8 @@ function instant_zoom(_zoomValue){
     zoom=zoom_target*zoom_value;
 }
 function follow(_id){
-    var _x=clamp(_id.x-cmWPlayerPadding+xoff,0,(room_width-(width-zoom*aspect_ratio/2)));
-    var _y=clamp(_id.y-cmHPlayerPadding+yoff,0,(room_height-height-zoom/2));
+    var _x=clamp(_id.x-cmWPlayerPadding+xoff,zoom*aspect_ratio/2,(room_width-(width-zoom*aspect_ratio/2)));
+    var _y=clamp(_id.y-cmHPlayerPadding+yoff,zoom/2,room_height-(height-zoom/2));
     return [_x,_y];
 }
 function jump_on(_id){
