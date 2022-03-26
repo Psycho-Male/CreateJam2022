@@ -60,6 +60,8 @@
   },
   "resourceVersion": "1.0",
   "name": "Credits",
-  "tags": [],
+  "tags": [
+    "Main Menu",
+  ],
   "resourceType": "GMRoom",
 }

@@ -69,6 +69,8 @@
   },
   "resourceVersion": "1.0",
   "name": "MainMenu",
-  "tags": [],
+  "tags": [
+    "Main Menu",
+  ],
   "resourceType": "GMRoom",
 }

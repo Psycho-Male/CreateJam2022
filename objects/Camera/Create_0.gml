@@ -2,8 +2,10 @@
 #macro cmHalfWidth      Camera.width/2
 #macro cmWPlayerPadding (Camera.width*.5-zoom)//-(plId.facing*Camera.view_width*.10))
 #macro cmHPlayerPadding (Camera.height*.5-zoom*.5)
-#macro guiHCenter       display_get_gui_width()/2
-#macro guiVCenter       display_get_gui_height()/2
+#macro displayWidth     display_get_gui_width()
+#macro displayHeight    display_get_gui_height()
+#macro guiHCenter       displayWidth/2
+#macro guiVCenter       displayHeight/2
 if(ExcessiveInstance())exit;
 xoff=0;yoff=0;
 //------------------------------------------------------------------------------------------\\
@@ -101,16 +103,20 @@ max_scale=round(display_get_height()/ideal_height);
 //--------------------------------------------------\\
 //Init||
 //--------------------------------------------------//
-view_width=1920/6;
-view_height=1080/6;
+menu_width=1920/6;
+menu_height=1080/6;
+game_width=1920/4;
+game_height=1080/4;
+view_width=menu_width;
+view_height=menu_height;
 window_scale=3;
 read_options();
 window_resize(window_scale,false);
 locked_on=noone;
 zoom=0;
 zoom_value=32;
-zoom_target=2;
-zoom_min=-3;
-zoom_max=3;
+zoom_target=0;
+zoom_min=0;
+zoom_max=8;
 state=state_free;
 update_position();

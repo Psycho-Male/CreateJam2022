@@ -99,6 +99,9 @@ function InstancePlace(_inst,_x=x,_y=y){
 function PlaceMeeting(_inst,_x=x,_y=y){
     return place_meeting(_x,_y,_inst);
 }
+function Find(_index,_num=0){
+    return instance_find(_index,0);
+}
 function Nearest(_index,_x=x,_y=y){
     return instance_nearest(_x,_y,_index);
 }

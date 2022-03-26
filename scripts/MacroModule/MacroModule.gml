@@ -68,7 +68,6 @@ Trace("Initialize function macros...");
 //#macro Destroy      Destroy
 //#macro Nearest                  instance_nearest
 #macro Number                   instance_number
-#macro Find                     instance_find
 #macro DrawSetColor             draw_set_color
 #macro DrawSetAlpha             draw_set_alpha
 #macro roomName                 room_get_name(room)

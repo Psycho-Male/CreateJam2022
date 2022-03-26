@@ -72,6 +72,8 @@
   },
   "resourceVersion": "1.0",
   "name": "Audio",
-  "tags": [],
+  "tags": [
+    "Main Menu",
+  ],
   "resourceType": "GMRoom",
 }

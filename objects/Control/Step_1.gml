@@ -5,3 +5,9 @@ if(kp_escape){
 if(room==MainMenu){
     if(DEVELOPER&&kp_enter)GoTo(START_ROOM);
 }
+if(kc_control&&kp_d){
+    DEBUG.enabled=!DEBUG.enabled;
+}
+if(DEBUG.enabled){
+    GuiTrace("Debug enabled.");
+}

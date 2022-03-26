@@ -1,0 +1,13 @@
+if(!Exists(Shop)){
+    Destroy();
+    exit;
+}
+surface_x=spawnx+Shop.xoff;
+surface_y=spawny+Shop.yoff;
+x=spawnx+Shop.x+Shop.xoff;
+y=spawny+Shop.y+Shop.yoff;
+if(y<Shop.y||y>Shop.y+Shop.height){
+    tooltip="";
+}else{
+    tooltip=description;
+}

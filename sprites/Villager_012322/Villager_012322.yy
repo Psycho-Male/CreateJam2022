@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "CreateJam2022",
-    "path": "CreateJam2022.yyp",
+    "name": "Farmer",
+    "path": "folders/Farmer.yy",
   },
   "resourceVersion": "1.0",
   "name": "Villager_012322",

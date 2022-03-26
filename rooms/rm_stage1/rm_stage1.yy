@@ -15,6 +15,8 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"PlayerSpawner","path":"objects/PlayerSpawner/PlayerSpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":373.0,"y":261.0,"resourceVersion":"1.0","name":"inst_589D9679","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"EnemyTarget","path":"objects/EnemyTarget/EnemyTarget.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":732.0,"y":450.0,"resourceVersion":"1.0","name":"inst_23467040","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"EnemySpawner","path":"objects/EnemySpawner/EnemySpawner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":28.0,"y":407.0,"resourceVersion":"1.0","name":"inst_1313D8B7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"PixelPackTOPDOWN8BIT_Tile","path":"tilesets/PixelPackTOPDOWN8BIT_Tile/PixelPackTOPDOWN8BIT_Tile.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":25,"SerialiseHeight":25,"TileSerialiseData":[
 16,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18,
@@ -50,6 +52,8 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_589D9679","path":"rooms/rm_stage1/rm_stage1.yy",},
+    {"name":"inst_23467040","path":"rooms/rm_stage1/rm_stage1.yy",},
+    {"name":"inst_1313D8B7","path":"rooms/rm_stage1/rm_stage1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -73,8 +77,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "CreateJam2022",
-    "path": "CreateJam2022.yyp",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_stage1",

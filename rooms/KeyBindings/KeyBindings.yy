@@ -96,6 +96,8 @@
   },
   "resourceVersion": "1.0",
   "name": "KeyBindings",
-  "tags": [],
+  "tags": [
+    "Main Menu",
+  ],
   "resourceType": "GMRoom",
 }

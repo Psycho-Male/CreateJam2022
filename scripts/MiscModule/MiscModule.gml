@@ -85,6 +85,10 @@ function LerpSnap(_value,_target,_lerpAmount,_snapTresh){
     }
     return _result;
 }
+function LerpOff(_value,_target,_lerpAmount,_offset){
+    var _result=lerp(_value,_target+_offset*sign(_target),_lerpAmount);
+    return _result;
+}
 function IsGlobal(_str) {
     return string_upper(_str)==_str;
 }

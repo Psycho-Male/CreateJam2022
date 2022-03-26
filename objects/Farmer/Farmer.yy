@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Character",
+    "path": "objects/Character/Character.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -34,8 +37,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "CreateJam2022",
-    "path": "CreateJam2022.yyp",
+    "name": "Farmer",
+    "path": "folders/Farmer.yy",
   },
   "resourceVersion": "1.0",
   "name": "Farmer",
