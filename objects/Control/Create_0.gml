@@ -25,3 +25,8 @@ fade={
 }
 globalvar GRID;GRID=-1;
 death_room_timer=GetTimer(120);
+play_room=false;
+
+notification_timer=160;
+notification_list=DsListCreate();
+linebreak=12;

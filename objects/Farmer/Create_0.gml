@@ -1,6 +1,5 @@
 //States------------------------------------------------------------------------------------\\
 function state_idle(){
-    GuiTrace("Idle");
     movement();
     if(hsp!=0||vsp!=0){
         StateChange(state_run,sprite_run);
@@ -8,13 +7,11 @@ function state_idle(){
 }
 function state_run(){
     movement();
-    GuiTrace("Run");
     if(hsp==0&&vsp==0){
         StateChange(state_idle,sprite_idle);
     }
 }
 function state_stunned(){
-    GuiTrace("Stunned");
     if(stun_timer.countdown()){
         StateChange(state_idle,sprite_idle);
     }
@@ -22,6 +19,8 @@ function state_stunned(){
 function state_collect(){
 }
 function state_water(){
+}
+function state_dig(){
 }
 function state_plant(){
 }

@@ -2,7 +2,11 @@ if(room==Init){
     room_goto(MainMenu);
     exit;
 }
-if(RoomIsPlayable()){
+play_room=RoomIsPlayable();
+if(play_room){
+    if(audio_is_playing(bgm_menu)){
+        audio_stop_sound(bgm_menu);
+    }
     Trace("room: "+room_get_name(room));
     var _cellSize=16;
     GRID=mp_grid_create(0,0,room_width,room_height,_cellSize,_cellSize);
@@ -14,4 +18,6 @@ if(RoomIsPlayable()){
         }
     }
     SaveGame();
+}else if(!audio_is_playing(bgm_menu)){
+    BgmPlay(bgm_menu);
 }

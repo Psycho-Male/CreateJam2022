@@ -13,9 +13,12 @@ if(DEBUG.enabled){
     if(kp_o)HurtPlayer(100);
 }
 if(room==rm_death){
-    GuiTrace("death_room_timer.time: ",death_room_timer.time);
     if(death_room_timer.countdown()){
         ButtonStartGame();
     }
 }
-if(
+if(play_room){
+    if(!Exists(EnemySpawner)&&!Exists(Enemy)){
+        GoTo(room_next(room));
+    }
+}

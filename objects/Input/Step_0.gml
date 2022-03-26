@@ -19,18 +19,16 @@ y=mouse_y;
 cursor_sprite=mc_left1?sprite_clicked:sprite_normal;
 check_button();
 if(mp_right1){
-    Trace("MP_RIGHT");
-    if(!Exists(Shop)){
-        InstanceCreate(Shop);
-    }else{
-        with(Shop){
+    if(Control.play_room){
+        if(!Exists(Shop)){
+            InstanceCreate(Shop);
+        }else{
+            if(Exists(item_purchased)){
+                plGold+=item_purchased.price;
+                Destroy(item_purchased);item_purchased=noone;
+            }
         }
     }
-}
-if(mc_left1){
-    if(!Exists(move_to))move_to=InstanceCreate(MoveTarget);
-    move_to.x=x;
-    move_to.y=y;
 }
 if(PlaceMeeting(Gui,gui_x,gui_y)){
     var _mwDir=mw_down-mw_up;
@@ -47,8 +45,25 @@ if(PlaceMeeting(Gui,gui_x,gui_y)){
             tooltip=VIGet(_gui,"tooltip");
         }
     }
+    if(mp_left1){
+        prevent_movement=true;
+        if(_gui.object_index==ShopItem){
+            item_purchased=Shop.item_purchase(_gui);
+        }
+    }
 }else{
     if(mw_down)Camera.zoom_target++;else if(mw_up)Camera.zoom_target--;
 }
+if(mc_left1){
+    if(!prevent_movement){
+        if(!Exists(move_to))move_to=InstanceCreate(MoveTarget);
+        move_to.x=x;
+        move_to.y=y;
+    }
+}
+if(mr_left1){
+    if(prevent_movement){
+        prevent_movement=false;
+    }
+}
 get_mouse_drag();
-GuiTrace("tooltip: ",tooltip);

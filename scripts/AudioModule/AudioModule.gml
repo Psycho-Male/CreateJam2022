@@ -62,6 +62,18 @@ function SfxPlay(_sfx,_loop=false){
     audio_sound_gain(_id,_sfxVol,0);
     return _id;
 }
+function BgmPlay(_bgm,_loop=true){
+    var _bgmVol=AudioManager.bgm_vol;
+    if(IsString(_bgm)){
+        _bgm=tag_get_asset_ids(_bgm,asset_sound);
+    }
+    if(IsArray(_bgm)){
+        _bgm=ArrayChoose(_bgm);
+    }
+    var _id=audio_play_sound(_bgm,0,_loop);
+    audio_sound_gain(_id,_bgmVol,0);
+    return _id;
+}
 function BgmCrossfade(_bgm,_fadeTime=2800,_loop=true){
     var _bgmVol=AudioManager.bgm_vol;
     audio_group_set_gain(aug_bgm,0,_fadeTime);

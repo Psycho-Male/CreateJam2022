@@ -44,6 +44,27 @@ function item_create(_name,_sprite,_price,_description){
         ds_list_add(other.item_list,id);
     }
 }
+function copy_item(_src,_dest){
+    with(_dest){
+        name=_src.name;
+        sprite_index=_src.sprite_index;
+        price=_src.price;
+        description=_src.description;
+    }
+}
+function item_purchase(_item){
+    var _price=_item.price
+    if(IsDefined(plId.item_in_hand)){
+    }else if(plGold<_price){
+        Notification("[c_red]Not enough gold![/c]");
+    }else{
+        plGold-=_price;
+        var _newItem=InstanceCreate(ItemInHand,Input.gui_x,Input.gui_y,depth-1);
+        copy_item(_item,_newItem);
+        return _newItem;
+    }
+    return noone;
+}
 //Init--------------------------------------------------------------------------------------\\
 width=64;
 height=displayHeight*0.5;
