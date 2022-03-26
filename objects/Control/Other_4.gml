@@ -4,10 +4,12 @@ if(room==Init){
 }
 play_room=RoomIsPlayable();
 if(play_room){
+    plHp=plHpMax;
     if(audio_is_playing(bgm_menu)){
         audio_stop_sound(bgm_menu);
     }
     Trace("room: "+room_get_name(room));
+    //------------------------------------------------------------------------------------------\\
     var _cellSize=16;
     GRID=mp_grid_create(0,0,room_width,room_height,_cellSize,_cellSize);
     mp_grid_add_rectangle(GRID,0,0,room_width,room_height);
@@ -17,6 +19,10 @@ if(play_room){
             mp_grid_clear_rectangle(GRID,i+1,j+1,i+_cellSize-1,j+_cellSize-1);
         }
     }
+    //------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------\\
+    TILEMAP=layer_tilemap_get_id(layer_get_id("Tiles_1"));
+    //------------------------------------------------------------------------------------------//
     SaveGame();
 }else if(!audio_is_playing(bgm_menu)){
     BgmPlay(bgm_menu);

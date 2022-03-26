@@ -19,3 +19,18 @@ function AnimationFrameTime(_sprite=sprite_index,_spd=sprite_get_speed(_sprite)*
         return _frameCount*_spd;
     }
 }
+function HitFrameBroadcastCheck(_id=id){
+    if(layer_instance_get_instance(event_data[?"element_id"])==_id){
+        if(event_data[?"event_type"]=="sprite event"){
+            switch event_data[?"message"]{
+                case "Dig":
+                target_grid=update_target_grid();
+                if(!tilemap_get_at_pixel(GRID,target_grid[0],target_grid[1])){
+                    tilemap_set_at_pixel(TILEMAP,4,target_grid[0],target_grid[1]);
+                }
+                return true;
+            }
+        }
+    }
+    return false;
+}

@@ -21,7 +21,7 @@ function state_despawn(){
 //------------------------------------------------------------------------------------------//
 //Functions---------------------------------------------------------------------------------\\
 //------------------------------------------------------------------------------------------//
-function item_create(_name,_sprite,_price,_description){
+function item_create(_name,_plantObject,_sprite,_price,_description){
     var _len=ds_list_size(item_list);
     var _gridSize=16;
     var _padding=8;
@@ -38,6 +38,7 @@ function item_create(_name,_sprite,_price,_description){
         surface_y=spawny+other.yoff+yoff;
         name=_name;
         sprite_index=_sprite;
+        plant_object=_plantObject;
         price=_price;
         description=_description;
         tooltip=description;
@@ -49,6 +50,7 @@ function copy_item(_src,_dest){
         name=_src.name;
         sprite_index=_src.sprite_index;
         price=_src.price;
+        plant_object=_src.plant_object;
         description=_src.description;
     }
 }
@@ -82,4 +84,11 @@ item_list=DsListCreate();
 state=state_spawn;
 xoff=0;yoff=0;
 item_surface=surface_create(width,height);
+//Items
+item_create("Delici",Delici1,spr_delici_icon    ,1,"Delici iste");
+item_create("Engine",Engine1,spr_engine_icon    ,1,"Engine iste");
+item_create("Eniste",Eniste1,spr_eniste_icon    ,1,"Eniste iste");
+item_create("Kapan" ,Kapan1 ,spr_kapan_icon     ,1,"Kapan iste");
+item_create("Nar"   ,Nar1   ,spr_nar_icon       ,1,"Nar iste");
+item_create("Casual",Casual1,spr_casual_icon    ,1,"Casual iste");
 //------------------------------------------------------------------------------------------//

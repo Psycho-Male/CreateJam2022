@@ -24,6 +24,7 @@ fade={
     },
 }
 globalvar GRID;GRID=-1;
+globalvar TILEMAP;TILEMAP=-1;
 death_room_timer=GetTimer(120);
 play_room=false;
 

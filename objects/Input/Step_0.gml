@@ -7,11 +7,9 @@ gui_x=device_mouse_x_to_gui(0);
 gui_y=device_mouse_y_to_gui(0);
 if(!mouse_active){
     mouse_active=gui_x!=guixprv||gui_y!=guiyprv;
-    if(mouse_active)Trace("Mouse focus activated.");
 }
 if(mouse_active&&(inpHorizontal!=0||inpVertical!=0)){
     mouse_active=false;
-    Trace("Mouse focus disabled.");
 }
 //------------------------------------------------------------------------------------------//
 x=mouse_x;
@@ -29,6 +27,11 @@ if(mp_right1){
             }
         }
     }
+}
+if(Exists(item_purchased)){
+    GuiTrace("item_purchased: ",object_get_name(item_purchased.object_index));
+    GuiTrace("item_purchased: ",item_purchased);
+    GuiTrace("item_purchased.plant_object: ",object_get_name(item_purchased.plant_object));
 }
 if(PlaceMeeting(Gui,gui_x,gui_y)){
     var _mwDir=mw_down-mw_up;
@@ -53,6 +56,19 @@ if(PlaceMeeting(Gui,gui_x,gui_y)){
     }
 }else{
     if(mw_down)Camera.zoom_target++;else if(mw_up)Camera.zoom_target--;
+    if(mp_left1){
+        if(Exists(item_purchased)){
+            prevent_movement=true;
+            var _x=round(x/16)*16;
+            var _y=round(y/16)*16;
+            if(tilemap_get_at_pixel(TILEMAP,_x,_y)==4&&!position_meeting(_x,_y,Plant)){
+                InstanceCreate(item_purchased.plant_object,_x,_y);
+                Destroy(item_purchased);item_purchased=noone;
+            }else{
+                Notification("[c_red]Can't place there![/c]");
+            }
+        }
+    }
 }
 if(mc_left1){
     if(!prevent_movement){
