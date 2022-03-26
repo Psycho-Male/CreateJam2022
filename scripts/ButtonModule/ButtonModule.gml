@@ -53,7 +53,7 @@ function ButtonResetSave(){
     }
 }
 function ButtonStartGame(){
-    var _room=undefined;//LoadGame();
+    var _room=LoadGame();
     if(IsDefined(_room)){
         GoTo(_room);
     }else{

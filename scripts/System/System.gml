@@ -9,8 +9,14 @@ surface_depth_disable(true);
 //                                                                                          ||
 //------------------------------------------------------------------------------------------//
 globalvar VERSION;VERSION="build:"+str(GM_build_date)+" v:"+str(GM_version);
+globalvar LOADING;LOADING=false;
 globalvar HUD_POSITIONS;HUD_POSITIONS=DsMapCreate();
-globalvar SYSTEM;SYSTEM = {
+globalvar GAME;GAME={
+    speed:1,
+    version:GM_version,
+    build_date:GM_build_date,//GetGMBuildDate(),
+}
+globalvar SYSTEM;SYSTEM={
     mobile                  : false,
     browser                 : false,
     unix                    : false,

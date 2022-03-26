@@ -150,10 +150,6 @@ function DsListAddAsMap(_index,_map) {
     DsListAdd(_index,_map);
     ds_list_mark_as_map(_index,DsListSize(_index)-1);
 }
-function JsonDecode(_str) {
-    var _map=json_decode(_str);
-    return _map;
-}
 function DsCheck() {
     Trace("Checking data structures...",LOGLEVEL.INFO);
     var _missing_ds_found=false;

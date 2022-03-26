@@ -198,3 +198,6 @@ function Timer(_time) constructor{
         time=time_reset;
     }
 }
+function RoomIsPlayable(){
+    return !TagContained(room_get_name(room),"Main Menu");
+}

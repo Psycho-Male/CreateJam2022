@@ -23,3 +23,5 @@ fade={
         draw_sprite_ext(spr_fade,0,0,0,Camera.view_width,Camera.view_height,0,c_white,alpha);
     },
 }
+globalvar GRID;GRID=-1;
+death_room_timer=GetTimer(120);

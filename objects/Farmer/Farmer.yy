@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Villager_0123",
-    "path": "sprites/Villager_0123/Villager_0123.yy",
+    "name": "spr_farmer_idle",
+    "path": "sprites/spr_farmer_idle/spr_farmer_idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -30,8 +30,8 @@
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":5,"value":"Villager_012322","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_idle","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"Villager_0123","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_run","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"spr_farmer_idle","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_idle","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"spr_farmer_run","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_run","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":5,"value":"spr_blank","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_water","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":5,"value":"spr_blank","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_collect","tags":[],"resourceType":"GMObjectProperty",},
   ],

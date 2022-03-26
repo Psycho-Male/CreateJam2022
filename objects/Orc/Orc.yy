@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Enemy",
+    "path": "objects/Enemy/Enemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,7 +25,10 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"sprite_run","path":"objects/Character/Character.yy",},"objectId":{"name":"Character","path":"objects/Character/Character.yy",},"value":"spr_orc_run","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"sprite_idle","path":"objects/Character/Character.yy",},"objectId":{"name":"Character","path":"objects/Character/Character.yy",},"value":"spr_orc_idle","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Orc",
     "path": "folders/Orc.yy",
