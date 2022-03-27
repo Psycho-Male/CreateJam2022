@@ -209,6 +209,7 @@
     {"id":{"name":"scribble_typewriter_add_event","path":"scripts/scribble_typewriter_add_event/scribble_typewriter_add_event.yy",},"order":7,},
     {"id":{"name":"scribble_font_bake_outline","path":"scripts/scribble_font_bake_outline/scribble_font_bake_outline.yy",},"order":4,},
     {"id":{"name":"Bebek_Eniste_Idle_strip4","path":"sprites/Bebek_Eniste_Idle_strip4/Bebek_Eniste_Idle_strip4.yy",},"order":0,},
+    {"id":{"name":"spr_menu_bg","path":"sprites/spr_menu_bg/spr_menu_bg.yy",},"order":13,},
     {"id":{"name":"spr_map_button","path":"sprites/spr_map_button/spr_map_button.yy",},"order":4,},
     {"id":{"name":"Hurt_Player","path":"sounds/Hurt_Player/Hurt_Player.yy",},"order":18,},
     {"id":{"name":"sentry_saved_send","path":"scripts/sentry_saved_send/sentry_saved_send.yy",},"order":14,},

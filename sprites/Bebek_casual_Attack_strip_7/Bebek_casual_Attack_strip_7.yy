@@ -50,7 +50,7 @@
     "spriteId": {"name":"Bebek_casual_Attack_strip_7","path":"sprites/Bebek_casual_Attack_strip_7/Bebek_casual_Attack_strip_7.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.0,
+    "playbackSpeed": 0.15,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

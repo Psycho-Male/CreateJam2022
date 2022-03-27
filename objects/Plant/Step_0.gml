@@ -1,3 +1,4 @@
+state();
 if(level==1){
     if(grow_timer1.countdown()){
         levelup();

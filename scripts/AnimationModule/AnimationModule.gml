@@ -33,6 +33,10 @@ function HitFrameBroadcastCheck(_id=id){
                 }
                 return true;
                 case "Attack":
+                if(Exists(locked_on)){
+                    var _dir=point_direction(x,y,_target.x,_target.y);
+                    ShootProjectile(id,projectile_sprite,damage,1,_dir);
+                }
                 return true;
             }
         }
