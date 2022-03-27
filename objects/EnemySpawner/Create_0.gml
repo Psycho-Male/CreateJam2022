@@ -27,7 +27,7 @@ switch(room){
 	ArrayAdd(spawn_list,[Ladybug,20]);
 	ArrayAdd(spawn_list,[Ladybug,20]);
 	ArrayAdd(spawn_list,[Ladybug,20]);
-	ArrayAdd(spawn_list,[Ladybug,20]);
+	ArrayAdd(spawn_list,[Ladybug,1040]);
 	#endregion
 	#region Wave[4]
 	ArrayAdd(spawn_list,[Tank,60]);
@@ -120,7 +120,7 @@ switch(room){
 	ArrayAdd(spawn_list,[Ladybug,10]);
 	ArrayAdd(spawn_list,[Ladybug,10]);
 	ArrayAdd(spawn_list,[Ladybug,10]);
-	ArrayAdd(spawn_list,[Ladybug,10]);
+	ArrayAdd(spawn_list,[Ladybug,1040]);
 	//Wave[12]
 	ArrayAdd(spawn_list,[Ladybug,10]);
 	ArrayAdd(spawn_list,[Ladybug,10]);
