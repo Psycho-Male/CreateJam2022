@@ -1,5 +1,5 @@
 if(PlaceMeeting(Enemy)){
     var _hit=Nearest(Enemy);
-    Enemy.hp-=damage;
+    _hit.hp-=damage;
     Destroy();
 }

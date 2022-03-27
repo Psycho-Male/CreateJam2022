@@ -52,7 +52,7 @@
     {"id":{"name":"Tilset1","path":"tilesets/Tilset1/Tilset1.yy",},"order":39,},
     {"id":{"name":"__scribble_gen_6_build_lines","path":"scripts/__scribble_gen_6_build_lines/__scribble_gen_6_build_lines.yy",},"order":6,},
     {"id":{"name":"__shd_scribble_bake_outline_4dir","path":"shaders/__shd_scribble_bake_outline_4dir/__shd_scribble_bake_outline_4dir.yy",},"order":1,},
-    {"id":{"name":"Olgun_Delici_Attack_strip7","path":"sprites/Olgun_Delici_Attack_strip7/Olgun_Delici_Attack_strip7.yy",},"order":4,},
+    {"id":{"name":"Olgun_Delici_Attack_strip_7","path":"sprites/Olgun_Delici_Attack_strip_7/Olgun_Delici_Attack_strip_7.yy",},"order":4,},
     {"id":{"name":"Delici3","path":"objects/Delici3/Delici3.yy",},"order":9,},
     {"id":{"name":"scribble_anim_rainbow","path":"scripts/scribble_anim_rainbow/scribble_anim_rainbow.yy",},"order":4,},
     {"id":{"name":"Nar","path":"objects/Nar/Nar.yy",},"order":9,},

@@ -34,9 +34,17 @@ function HitFrameBroadcastCheck(_id=id){
                 return true;
                 case "Attack":
                 if(Exists(locked_on)){
-                    var _dir=point_direction(x,y,_target.x,_target.y);
+                    var _dir=point_direction(x,y,locked_on.x,locked_on.y);
                     ShootProjectile(id,projectile_sprite,damage,1,_dir);
                 }
+                return true;
+                case "Slam":
+                var _list=ds_list_create();
+                collision_circle_list(x,y,range,Enemy,false,true,_list,false);
+                for(var i=0;i<ds_list_size(_list);i++){
+                    _list[|i].hp-=damage;
+                }
+                ds_list_destroy(_list);
                 return true;
             }
         }
