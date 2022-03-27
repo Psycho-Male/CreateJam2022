@@ -27,6 +27,7 @@
     {"propertyId":{"name":"sell_price1","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"56","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sell_price2","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"84","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sell_price3","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"112","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Delici",

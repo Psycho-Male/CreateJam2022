@@ -42,7 +42,7 @@ function levelup(){
         sprite_index=sprite_attack;
     }
     level++;
-    damage++;
+    damage = damage * 2;
 }
 function water(){
     thirsty=false;

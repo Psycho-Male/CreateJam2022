@@ -27,6 +27,7 @@
     {"propertyId":{"name":"sell_price1","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"88","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sell_price2","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"132","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"sell_price3","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"176","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"damage","path":"objects/Plant/Plant.yy",},"objectId":{"name":"Plant","path":"objects/Plant/Plant.yy",},"value":"999","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Kapan",
