@@ -30,9 +30,19 @@ state=state_normal;
 //Init--------------------------------------------------------------------------------------\\
 path=-1;
 path_free=false;
-path_spd=1;
 target=noone;
 alarm[0]=1;
-hp_max=3;
+switch(object_index){
+    case Tank:
+    hp_max=12;
+    path_spd=0.75;
+    break;case Fly:
+    hp_max=4;
+    path_spd=1.25;
+    break;case Ladybug:
+    hp_max=6;
+    path_spd=1;
+    break;
+}
 hp=hp_max;
 //------------------------------------------------------------------------------------------//

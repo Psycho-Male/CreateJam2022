@@ -29,20 +29,20 @@ function HitFrameBroadcastCheck(_id=id){
                 if(!tilemap_get_at_pixel(GRID,target_grid[0],target_grid[1])
                  &&!place_meeting(target_grid[0],target_grid[1],WaterSource)
                  &&!place_meeting(target_grid[0],target_grid[1],EnemyTarget)){
-                    tilemap_set_at_pixel(TILEMAP,5,target_grid[0],target_grid[1]);
+                    tilemap_set_at_pixel(TILEMAP,6,target_grid[0],target_grid[1]);
                 }
                 return true;
                 case "Attack":
                 if(Exists(locked_on)){
                     var _dir=point_direction(x,y,locked_on.x,locked_on.y);
-                    ShootProjectile(id,projectile_sprite,damage,1,_dir);
+                    ShootProjectile(id,projectile_sprite,damage+buff_dmg,3,_dir);
                 }
                 return true;
                 case "Slam":
                 var _list=ds_list_create();
-                collision_circle_list(x,y,range,Enemy,false,true,_list,false);
+                collision_circle_list(x,y,range+buff_range,Enemy,false,true,_list,false);
                 for(var i=0;i<ds_list_size(_list);i++){
-                    _list[|i].hp-=damage;
+                    _list[|i].hp-=damage+buff_dmg;
                 }
                 ds_list_destroy(_list);
                 return true;

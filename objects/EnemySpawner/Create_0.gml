@@ -5,6 +5,7 @@ switch(room){
     ArrayAdd(spawn_list,[Ladybug,15]);
     ArrayAdd(spawn_list,[Fly,45]);
     ArrayAdd(spawn_list,[Tank,35]);
+    ArrayAdd(spawn_list,["New wave incoming",500]);
     ArrayAdd(spawn_list,[Ladybug,15]);
     ArrayAdd(spawn_list,[Fly,45]);
     ArrayAdd(spawn_list,[Tank,35]);

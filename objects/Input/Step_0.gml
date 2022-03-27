@@ -60,7 +60,7 @@ if(PlaceMeeting(Gui,gui_x,gui_y)){
             prevent_movement=true;
             var _x=round(x/16)*16;
             var _y=round(y/16)*16;
-            if(tilemap_get_at_pixel(TILEMAP,_x,_y)==5&&!collision_rectangle(_x,_y,_x+8,_y+8,Plant,false,true)){
+            if(tilemap_get_at_pixel(TILEMAP,_x,_y)==6&&!collision_rectangle(_x,_y,_x+8,_y+8,Plant,false,true)){
                 with(InstanceCreate(item_purchased.plant_object,_x+8,_y+8,"Instances")){
                     state=state_idle;
                 }

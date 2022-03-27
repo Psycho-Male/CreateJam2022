@@ -68,13 +68,17 @@ function sell(){
 state=state_plant;
 level=1;
 water_amount=0;
-grow_timer1=GetTimer(60*1);
-grow_timer2=GetTimer(60*2);
-thirst_timer=GetTimer(180,false);
-damage=1;
+grow_timer1=GetTimer(3140);
+grow_timer2=GetTimer(3140);
+thirst_timer=GetTimer(7*60,false);
 thirsty=false;
 sprite_index=sprite_idle;
 attack_cd=GetTimer(60);
 projectile_sprite=projectile1;
 locked_on=noone;
+function buff_reset(){
+    buff_aspd=0;
+    buff_dmg=0;
+    buff_range=0;
+}buff_reset();
 //------------------------------------------------------------------------------------------//

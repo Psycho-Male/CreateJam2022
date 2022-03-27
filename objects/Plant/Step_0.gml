@@ -13,9 +13,9 @@ if(thirst_timer.countdown()){
     thirsty=true;
 }
 if(thirsty){
-    image_speed=1;
+    image_speed=1+buff_aspd;
     image_blend=c_yellow;
 }else{
-    image_speed=1;
+    image_speed=0.5+buff_aspd;
     image_blend=c_white;
 }

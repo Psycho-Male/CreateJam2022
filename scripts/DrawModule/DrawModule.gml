@@ -61,8 +61,8 @@ function DrawSlider(_x,_y,_sprite,_frame,_cur,_max,_widthTotal=sprite_get_width(
     _width=_widthTotal*(PercentageOf(_cur,_max)/100);
     draw_sprite_ext(_sprite,_frame,_x,_y,_width/_widthTotal,1,0,_imageBlend,1);
 }
-function Notification(_text){
+function Notification(_text,_time=Control.notification_timer){
     with(Control){
-        ds_list_add(notification_list,[_text,notification_timer]);
+        ds_list_add(notification_list,[_text,_time]);
     }
 }
