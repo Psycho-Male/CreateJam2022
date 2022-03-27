@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_blank",
-    "path": "sprites/spr_blank/spr_blank.yy",
+    "name": "spr_house",
+    "path": "sprites/spr_house/spr_house.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,8 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":5,"value":"spr_house","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_idle","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":5,"value":"spr_house_hurt","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sprite_hurt","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "CreateJam2022",

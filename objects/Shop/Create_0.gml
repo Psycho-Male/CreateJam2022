@@ -28,10 +28,10 @@ function item_create(_name,_plantObject,_sprite,_price,_description){
     var _column=_len%2;
     var _row=floor(_len/2);
     var _x=_padding+_column*(_gridSize+_padding);
-    var _y=_padding+_row*(_gridSize+_padding);
+    var _y=_padding+_row*(_gridSize+_padding+8);
     with(InstanceCreate(ShopItem,_x,_y,depth-1)){
         spawnx=x;
-        spawny=y;
+        spawny=y+8;
         xoff=0;
         yoff=0;
         surface_x=spawnx+other.xoff+xoff;
@@ -88,10 +88,10 @@ state=state_spawn;
 xoff=0;yoff=0;
 item_surface=surface_create(width,height);
 //Items
-item_create("Delici",Delici1,spr_delici_icon    ,1,"Delici iste");
-item_create("Engine",Engine1,spr_engine_icon    ,1,"Engine iste");
-item_create("Eniste",Eniste1,spr_eniste_icon    ,1,"Eniste iste");
-item_create("Kapan" ,Kapan1 ,spr_kapan_icon     ,1,"Kapan iste");
-item_create("Nar"   ,Nar1   ,spr_nar_icon       ,1,"Nar iste");
-item_create("Casual",Casual1,spr_casual_icon    ,1,"Casual iste");
+item_create("Delici",Delici1,spr_delici_icon    ,1,"Delici(Low Efficient for Farm, Piercing Projectile, Mid Attack Speed, Mid Damage, Mid Area)");
+item_create("Engine",Engine1,spr_engine_icon    ,1,"Engine(High Efficient for Farm, None Attack)");
+item_create("Eniste",Eniste1,spr_eniste_icon    ,1,"Eniste(Mid Efficient for Farm, Increases Attack Speed, Increases Damage, Mid Area)");
+item_create("Kapan" ,Kapan1 ,spr_kapan_icon     ,1,"Kapan(Low Efficient for Farm, One Shot, Low Attack Speed, High Damage, Low Area)");
+item_create("Nar"   ,Nar1   ,spr_nar_icon       ,1,"Nar(Low Efficient for Farm, Area off Effect, Mid Attack Speed, Low Damage, Low Area)");
+item_create("Casual",Casual1,spr_casual_icon    ,1,"Casual(Mid Efficient for Farm. Mid Attack Speed, Mid Damage, High Area)");
 //------------------------------------------------------------------------------------------//

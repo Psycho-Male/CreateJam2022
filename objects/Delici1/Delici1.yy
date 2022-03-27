@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Bebek_Delici_Idle_strip_4",
+    "path": "sprites/Bebek_Delici_Idle_strip_4/Bebek_Delici_Idle_strip_4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -5,14 +5,15 @@
 
 globalvar PLAYER;PLAYER={
     id:noone,
-    hp_max:100,
-    hp:100,
+    hp_max:25,
+    hp:25,
     water_amount:0,
-    gold:100,
+    gold:75,
 }
 function HurtPlayer(_damage){
     plHp-=_damage;
     if(plHp<=0){
+        SfxPlay(olmek2);
         GoTo(rm_death);
     }
 }

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Genc_Delici_Idle_strip_4",
+    "path": "sprites/Genc_Delici_Idle_strip_4/Genc_Delici_Idle_strip_4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -4,10 +4,13 @@ if(room==Init){
 }
 play_room=RoomIsPlayable();
 if(play_room){
-    plHp=plHpMax;
     if(audio_is_playing(bgm_menu)){
         audio_stop_sound(bgm_menu);
     }
+    if(!audio_is_playing(bgm_game)){
+        BgmPlay(bgm_game);
+    }
+    plHp=plHpMax;
     Trace("room: "+room_get_name(room));
     //------------------------------------------------------------------------------------------\\
     var _cellSize=16;
@@ -24,6 +27,11 @@ if(play_room){
     TILEMAP=layer_tilemap_get_id(layer_get_id("Tiles_1"));
     //------------------------------------------------------------------------------------------//
     SaveGame();
-}else if(!audio_is_playing(bgm_menu)){
-    BgmPlay(bgm_menu);
+}else{
+    if(audio_is_playing(bgm_game)){
+        audio_stop_sound(bgm_game);
+    }
+    if(!audio_is_playing(bgm_menu)){
+        BgmPlay(bgm_menu);
+    }
 }

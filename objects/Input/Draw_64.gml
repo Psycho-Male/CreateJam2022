@@ -1,4 +1,5 @@
 if(tooltip!=""){
+    //scribble(tooltip).wrap(128).align(fa_right,fa_top).draw(gui_x,gui_y);
     scribble(tooltip).align(fa_right,fa_top).draw(gui_x,gui_y);
 }
 if(DEBUG.enabled)draw_sprite(sprite_index,image_index,gui_x,gui_y);

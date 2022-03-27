@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Olgun_Nar_Idle_strip4",
+    "path": "sprites/Olgun_Nar_Idle_strip4/Olgun_Nar_Idle_strip4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Genc_casual_Idle_strip_4",
+    "path": "sprites/Genc_casual_Idle_strip_4/Genc_casual_Idle_strip_4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -24,10 +24,15 @@ function HitFrameBroadcastCheck(_id=id){
         if(event_data[?"event_type"]=="sprite event"){
             switch event_data[?"message"]{
                 case "Dig":
+                SfxPlay([bicme,bicme2]);
                 target_grid=update_target_grid();
-                if(!tilemap_get_at_pixel(GRID,target_grid[0],target_grid[1])){
-                    tilemap_set_at_pixel(TILEMAP,4,target_grid[0],target_grid[1]);
+                if(!tilemap_get_at_pixel(GRID,target_grid[0],target_grid[1])
+                 &&!place_meeting(target_grid[0],target_grid[1],WaterSource)
+                 &&!place_meeting(target_grid[0],target_grid[1],EnemyTarget)){
+                    tilemap_set_at_pixel(TILEMAP,5,target_grid[0],target_grid[1]);
                 }
+                return true;
+                case "Attack":
                 return true;
             }
         }

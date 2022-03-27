@@ -10,6 +10,7 @@ function get_path(){
 function state_normal(){
     if(PlaceMeeting(target)){
         HurtPlayer(1);
+        EnemyTarget.hurt();
         StateChange(state_death);
     }else if(hp<=0){
         StateChange(state_death);

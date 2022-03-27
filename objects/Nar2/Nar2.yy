@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Genc_Nar_Idle_strip4",
+    "path": "sprites/Genc_Nar_Idle_strip4/Genc_Nar_Idle_strip4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

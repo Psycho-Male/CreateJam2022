@@ -55,7 +55,7 @@ function get_mouse_drag(){
 //------------------------------------------------------------------------------------------//
 //Init--------------------------------------------------------------------------------------\\
 button=noone;
-window_set_cursor(cr_none);
+//window_set_cursor(cr_none);
 tooltip="";
 move_to=noone;
 mouse_active=false;

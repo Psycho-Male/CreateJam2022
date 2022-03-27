@@ -360,9 +360,9 @@ INPUT_NAMES[inp.up               ]="Up";
 INPUT_NAMES[inp.down             ]="Down";
 INPUT_NAMES[inp.left             ]="Left";
 INPUT_NAMES[inp.right            ]="Right";
-INPUT_NAMES[inp.action1          ]="Action 1/Confirm";
-INPUT_NAMES[inp.action2          ]="Action 2";
-INPUT_NAMES[inp.action3          ]="Action 3/Cancel";
+INPUT_NAMES[inp.action1          ]="Dig";
+INPUT_NAMES[inp.action2          ]="Interact";
+INPUT_NAMES[inp.action3          ]="Sell Plant";
 INPUT_NAMES[inp.cancel           ]="Cancel/Back";
 INPUT_NAMES[inp.confirm          ]="Confirm";
 with(KEY){

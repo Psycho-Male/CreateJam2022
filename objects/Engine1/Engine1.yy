@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Bebek_Engine_Idle_strip4",
+    "path": "sprites/Bebek_Engine_Idle_strip4/Bebek_Engine_Idle_strip4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -41,7 +41,7 @@
     "spriteId": {"name":"Olgun_casual_Idle_strip_4","path":"sprites/Olgun_casual_Idle_strip_4/Olgun_casual_Idle_strip_4.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.0,
+    "playbackSpeed": 0.1,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

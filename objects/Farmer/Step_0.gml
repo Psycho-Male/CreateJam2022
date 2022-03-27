@@ -1,10 +1,8 @@
 depth=-y;
 //target_obj=instance_place(target_grid[0],target_grid[1],some_instance);
+state();
 if(collision_check_h())hsp=0;
 if(collision_check_v())vsp=0;
-state();
-GuiTrace("invul: ",invul);
-GuiTrace("invul.timer_time: ",invul_timer.time);
 //Hurt and invul----------------------------------------------------------------------------\\
 if(invul&&state!=state_stunned&&state!=state_stunned_trans){
     GuiTrace("Invul");
@@ -17,5 +15,6 @@ if(invul&&state!=state_stunned&&state!=state_stunned_trans){
 }else if(!invul&&PlaceMeeting(Enemy)){
     if(bucket_full)bucket_full=false;
     StateChange(state_stunned_trans,sprite_stunned_trans);
+    SfxPlay(stun);
 }
 //------------------------------------------------------------------------------------------//

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Olgun_casual_Idle_strip_4",
+    "path": "sprites/Olgun_casual_Idle_strip_4/Olgun_casual_Idle_strip_4.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -2,6 +2,8 @@ enum plDir{
     up,up_left,left,down_left,down,down_right,right,up_right,down_right_alt
 }
 #macro kpAction1        KP.action1
+#macro kpAction2        KP.action2
+#macro kpAction3        KP.action3
 function state_reset(){
     if(inpHorizontal!=0||inpVertical!=0){
         var _spr=bucket_full?sprite_run_full:sprite_run_empty;
@@ -19,6 +21,8 @@ function state_idle(){
         StateChange(state_run);
     }
     if(kpAction1)dig();
+    if(kpAction2)interact();
+    if(kpAction3)sell();
 }
 function state_run(){
     sprite_index=bucket_full?sprite_run_full:sprite_run_empty;
@@ -27,6 +31,8 @@ function state_run(){
         StateChange(state_idle);
     }
     if(kpAction1)dig();
+    if(kpAction2)interact();
+    if(kpAction3)sell();
 }
 function state_stunned_trans(){
     invul=true;
@@ -60,13 +66,26 @@ function interact(){
     var _well=instance_place(target_grid[0],target_grid[1],Well);
     var _plant=instance_place(target_grid[0],target_grid[1],Plant);
     if(Exists(_well)){
+        Trace("Bucket filled.");
+        SfxPlay(sualma);
         bucket_full=true;
     }else if(Exists(_plant)){
         if(bucket_full){
+            Trace("Plant watered.");
+            _plant.water();
+            SfxPlay(sulama);
             bucket_full=false;
         }else{
             Notification("[c_yellow]Fill the bucket from well first![/c]");
         }
+    }
+}
+function sell(){
+    var _plant=instance_place(target_grid[0],target_grid[1],Plant);
+    if(Exists(_plant)){
+        Trace("Sell plant.");
+        _plant.sell();
+        SfxPlay(ekme);
     }
 }
 function movement(){
