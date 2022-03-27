@@ -3,16 +3,19 @@ depth=-y;
 if(collision_check_h())hsp=0;
 if(collision_check_v())vsp=0;
 state();
+GuiTrace("invul: ",invul);
+GuiTrace("invul.timer_time: ",invul_timer.time);
 //Hurt and invul----------------------------------------------------------------------------\\
 if(invul&&state!=state_stunned&&state!=state_stunned_trans){
     GuiTrace("Invul");
-    invul=false;
     image_alpha=0.5;
     if(invul_timer.countdown()){
+        invul=false;
         StateChange(state_idle);
         image_alpha=1;
     }
 }else if(!invul&&PlaceMeeting(Enemy)){
+    if(bucket_full)bucket_full=false;
     StateChange(state_stunned_trans,sprite_stunned_trans);
 }
 //------------------------------------------------------------------------------------------//

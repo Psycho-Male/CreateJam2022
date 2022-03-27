@@ -5,3 +5,4 @@ state();
 zoom_target=clamp(zoom_target,zoom_min,zoom_max);
 zoom=lerp(zoom,zoom_target*zoom_value,.1);
 update_position();
+GuiTrace("zoom: ",zoom);

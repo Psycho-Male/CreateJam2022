@@ -15,9 +15,9 @@
   "layers": [
     {"instances":[
         {"properties":[
-            {"propertyId":{"name":"text","path":"objects/Button/Button.yy",},"objectId":{"name":"Button","path":"objects/Button/Button.yy",},"value":"\"Back\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"func","path":"objects/Button/Button.yy",},"objectId":{"name":"Button","path":"objects/Button/Button.yy",},"value":"ButtonMainMenu","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"Button","path":"objects/Button/Button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":148.0,"resourceVersion":"1.0","name":"inst_38C4517E","tags":[],"resourceType":"GMRInstance",},
+            {"propertyId":{"name":"sprite_index","path":"objects/Button/Button.yy",},"objectId":{"name":"Button","path":"objects/Button/Button.yy",},"value":"spr_button_back","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"Button","path":"objects/Button/Button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":152.0,"resourceVersion":"1.0","name":"inst_38C4517E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"text","path":"objects/Text/Text.yy",},"objectId":{"name":"Text","path":"objects/Text/Text.yy",},"value":"\"Duhan Durmaz\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"Text","path":"objects/Text/Text.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":38.0,"y":33.0,"resourceVersion":"1.0","name":"inst_29B4CE3F","tags":[],"resourceType":"GMRInstance",},

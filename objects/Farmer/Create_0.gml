@@ -56,6 +56,19 @@ function state_death(){
 //------------------------------------------------------------------------------------------//
 //Functions---------------------------------------------------------------------------------\\
 //------------------------------------------------------------------------------------------//
+function interact(){
+    var _well=instance_place(target_grid[0],target_grid[1],Well);
+    var _plant=instance_place(target_grid[0],target_grid[1],Plant);
+    if(Exists(_well)){
+        bucket_full=true;
+    }else if(Exists(_plant)){
+        if(bucket_full){
+            bucket_full=false;
+        }else{
+            Notification("[c_yellow]Fill the bucket from well first![/c]");
+        }
+    }
+}
 function movement(){
     if(Exists(Input.move_to)){
         if(inpHorizontal!=0||inpVertical!=0){
@@ -204,7 +217,7 @@ target_obj=noone;
 mouse_hsp=0;
 mouse_vsp=0;
 invul=false;
-invul_timer=GetTimer(30);
+invul_timer=GetTimer(75);
 stun_timer=GetTimer(60);
 bucket_full=false;
 //------------------------------------------------------------------------------------------//

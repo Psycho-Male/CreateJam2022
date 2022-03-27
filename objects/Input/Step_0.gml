@@ -28,15 +28,14 @@ if(mp_right1){
         }
     }
 }
-if(Exists(item_purchased)){
-    GuiTrace("item_purchased: ",object_get_name(item_purchased.object_index));
-    GuiTrace("item_purchased: ",item_purchased);
-    GuiTrace("item_purchased.plant_object: ",object_get_name(item_purchased.plant_object));
-}
 if(PlaceMeeting(Gui,gui_x,gui_y)){
     var _mwDir=mw_down-mw_up;
     var _mwOffMult=8;
-    var _gui=instance_place(gui_x,gui_y,Gui);
+    if(PlaceMeeting(ShopItem,gui_x,gui_y)){
+        var _gui=instance_place(gui_x,gui_y,ShopItem);
+    }else{
+        var _gui=instance_place(gui_x,gui_y,Gui);
+    }
     if(_mwDir!=0){
         if(_gui.object_index==ShopItem)_gui=Find(Shop);
         if(VIExists(_gui,"yoff")){
@@ -61,8 +60,8 @@ if(PlaceMeeting(Gui,gui_x,gui_y)){
             prevent_movement=true;
             var _x=round(x/16)*16;
             var _y=round(y/16)*16;
-            if(tilemap_get_at_pixel(TILEMAP,_x,_y)==4&&!position_meeting(_x,_y,Plant)){
-                InstanceCreate(item_purchased.plant_object,_x,_y);
+            if(tilemap_get_at_pixel(TILEMAP,_x,_y)==4&&!collision_rectangle(_x,_y,_x+8,_y+8,Plant,false,true)){
+                InstanceCreate(item_purchased.plant_object,_x+8,_y+8,"Instances");
                 Destroy(item_purchased);item_purchased=noone;
             }else{
                 Notification("[c_red]Can't place there![/c]");

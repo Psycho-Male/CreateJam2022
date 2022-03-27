@@ -1,5 +1,5 @@
 if(tooltip!=""){
-    scribble(tooltip).draw(x,y);
+    scribble(tooltip).align(fa_right,fa_top).draw(gui_x,gui_y);
 }
 if(DEBUG.enabled)draw_sprite(sprite_index,image_index,gui_x,gui_y);
 if(Exists(item_purchased)){

@@ -52,6 +52,9 @@ function copy_item(_src,_dest){
         price=_src.price;
         plant_object=_src.plant_object;
         description=_src.description;
+        var _id=InstanceCreate(plant_object);
+        range=_id.range;
+        Destroy(_id);
     }
 }
 function item_purchase(_item){

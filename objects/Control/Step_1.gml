@@ -8,10 +8,6 @@ if(room==MainMenu){
 if(kc_control&&kp_d){
     DEBUG.enabled=!DEBUG.enabled;
 }
-if(DEBUG.enabled){
-    GuiTrace("Debug enabled.");
-    if(kp_o)HurtPlayer(100);
-}
 if(room==rm_death){
     if(death_room_timer.countdown()){
         ButtonStartGame();

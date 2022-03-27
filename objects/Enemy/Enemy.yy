@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "CreateJam2022",
-    "path": "CreateJam2022.yyp",
+    "name": "Enemy",
+    "path": "folders/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "Enemy",

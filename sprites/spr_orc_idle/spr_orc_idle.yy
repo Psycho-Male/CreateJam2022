@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Orc",
-    "path": "folders/Orc.yy",
+    "path": "folders/Enemy/Orc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_orc_idle",
