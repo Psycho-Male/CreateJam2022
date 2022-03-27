@@ -35,13 +35,13 @@ alarm[0]=1;
 switch(object_index){
     case Tank:
     hp_max=12;
-    path_spd=0.75;
+    path_spd=0.5;
     break;case Fly:
     hp_max=4;
-    path_spd=1.25;
+    path_spd=1.00;
     break;case Ladybug:
     hp_max=6;
-    path_spd=1;
+    path_spd=0.75;
     break;
 }
 hp=hp_max;

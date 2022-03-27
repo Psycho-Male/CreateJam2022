@@ -42,7 +42,7 @@ function levelup(){
         sprite_index=sprite_attack;
     }
     level++;
-    damage++;
+    damage*=2;
 }
 function water(){
     thirsty=false;
@@ -81,4 +81,9 @@ function buff_reset(){
     buff_dmg=0;
     buff_range=0;
 }buff_reset();
+switch(objectParent){
+    case Kapan:
+    attack_cd=GetTimer(60*3);
+    break;
+}
 //------------------------------------------------------------------------------------------//

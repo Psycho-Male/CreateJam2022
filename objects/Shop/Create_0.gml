@@ -88,10 +88,11 @@ state=state_spawn;
 xoff=0;yoff=0;
 item_surface=surface_create(width,height);
 //Items
-item_create("Delici",Delici1,spr_delici_icon    ,1,"Delici\n([c_blue]Low[/c] Efficiency for Farming\n [c_yellow]Mid[/c] Attack Speed\n [c_yellow]Mid[/c] Damage\n [c_red]High[/c] Range)");
-item_create("Engine",Engine1,spr_engine_icon    ,1,"Engine\n([c_red][c_red]High[/c][/c] Efficiency for Farming)");
-item_create("Eniste",Eniste1,spr_eniste_icon    ,1,"Eniste\n([c_yellow]Mid[/c] Efficiency for Farming\n Increases Attack Speed\n Increases Damage\n [c_yellow]Mid[/c] Range)");
-item_create("Kapan" ,Kapan1 ,spr_kapan_icon     ,1,"Kapan\n([c_blue]Low[/c] Efficiency for Farming\n One Shot, [c_blue]Low[/c] Attack Speed, [c_red]High[/c] Damage, [c_blue]Low[/c] Range)");
-item_create("Nar"   ,Nar1   ,spr_nar_icon       ,1,"Nar\n([c_blue]Low[/c] Efficiency for Farming\n AOE Attack, [c_yellow]Mid[/c] Attack Speed\n [c_blue]Low[/c] Damage\n [c_blue]Low[/c] Range)");
-item_create("Casual",Casual1,spr_casual_icon    ,1,"Casual\n([c_yellow]Mid[/c] Efficiency for Farming. [c_yellow]Mid[/c] Attack Speed\n [c_yellow]Mid[/c] Damage\n [c_red]High[/c] Range)");
+var _minPrice=10;
+item_create("Delici",Delici1,spr_delici_icon    ,_minPrice*2.25,"Delici\n([c_blue]Low[/c] Efficiency for Farming\n [c_yellow]Mid[/c] Attack Speed\n [c_yellow]Mid[/c] Damage\n [c_red]High[/c] Range)");
+item_create("Engine",Engine1,spr_engine_icon    ,_minPrice*2,"Engine\n([c_red][c_red]High[/c][/c] Efficiency for Farming)");
+item_create("Eniste",Eniste1,spr_eniste_icon    ,_minPrice*2.5,"Eniste\n([c_yellow]Mid[/c] Efficiency for Farming\n Increases Attack Speed\n Increases Damage\n [c_yellow]Mid[/c] Range)");
+item_create("Kapan" ,Kapan1 ,spr_kapan_icon     ,_minPrice*5,"Kapan\n([c_blue]Low[/c] Efficiency for Farming\n One Shot, [c_blue]Low[/c] Attack Speed, [c_red]High[/c] Damage, [c_blue]Low[/c] Range)");
+item_create("Nar"   ,Nar1   ,spr_nar_icon       ,_minPrice*3,"Nar\n([c_blue]Low[/c] Efficiency for Farming\n AOE Attack, [c_yellow]Mid[/c] Attack Speed\n [c_blue]Low[/c] Damage\n [c_blue]Low[/c] Range)");
+item_create("Casual",Casual1,spr_casual_icon    ,_minPrice,"Casual\n([c_yellow]Mid[/c] Efficiency for Farming. [c_yellow]Mid[/c] Attack Speed\n [c_yellow]Mid[/c] Damage\n [c_red]High[/c] Range)");
 //------------------------------------------------------------------------------------------//
